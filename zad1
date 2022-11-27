@@ -1,7 +1,29 @@
-a, b = int(input()), int(input())
+#Задача «Ряд - 2». Даны два целых числа A и В. Выведите все числа от A до B включительно, в порядке возрастания, если A < B, или в порядке убывания в противном случае.
+#Шарапова Ангира 21 ис 21
+
+#через for
+
+a = int(input()) 
+b = int(input())
 if a < b:
     for i in range(a, b + 1, 1):
         print(i, end=' ')
 else:
     for i in range(a, b - 1, -1):
         print(i, end=' ')
+        
+        
+#через while
+
+a = int(input()) 
+b = int(input())
+i=a
+if a < b:
+    while i<=b:
+        print(i, end=' ')
+        i+=1 
+elif b<=a:
+    while i>=b:
+        print(i, end=' ')
+        i+=-1
+
