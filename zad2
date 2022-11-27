@@ -1,0 +1,12 @@
+n=int(input())
+summ=0
+i=1
+'''
+for i in range(n+1):
+    summ += i**3
+print(summ)
+
+while i <= n:
+    summ += i**3
+    i += 1
+print(summ)
